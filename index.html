@@ -10,6 +10,7 @@
             font-family: "Josefin Sans";
             text-align: center;
             background-color: #144a74;
+            margin: 0;
         }
         header {
             background-color: #8B0000;
@@ -19,23 +20,24 @@
         main {
             padding-top: 30px;
         }
-            .container {
-                display: flex;  
-                justify-content: space-between;
-                width: 80%;
-                margin: auto;
-            }
-            section {
-                width: 45%;
-                height: auto;
-                background: #003371;
-                color: #C9A227;
-                padding: 20px;
-                border-radius: 10px;
-            }
-            .left, .right {
-                min-height: 300px;
-            }
+        /* Chỉnh lại container để các section hiển thị chuẩn */
+        .container {
+            display: flex;  
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 80%;
+            margin: auto;
+            gap: 20px; /* Khoảng cách giữa hai section */
+        }
+        section {
+            width: 45%;
+            background: #003371;
+            color: #C9A227;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 300px; /* Đảm bảo tất cả section có chiều cao tối thiểu */
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng nhẹ */
+        }
         footer {
             background: #222;
             color: white;
@@ -50,17 +52,20 @@
         <p>Web Developer | Designer | Future Engineer</p>
     </header>
     <main>
-        <section>
-            <h2>Giới Thiệu</h2>
-            <p>Em là một lập trình viên tương lai, thích sáng tạo và khám phá! 🚀</p>
-        </section>
-        <section>
-            <h2>Dự Án</h2>
-            <p>1. Website bán hàng mini</p>
-            <p>2. Game nhỏ bằng JavaScript</p>
-        </section>
+        <div class="container">
+            <section class="left">
+                <h2>Giới Thiệu</h2>
+                <p>Em là một lập trình viên tương lai, thích sáng tạo và khám phá! 🚀</p>
+            </section>
+            <section class="right">
+                <h2>Dự Án</h2>
+                <p>1. Website bán hàng mini</p>
+                <p>2. Game nhỏ bằng JavaScript</p>
+            </section>
+        </div>
     </main>
     <footer>
         <p>© 2025 Bé Iu - All rights reserved</p>
     </footer>
 </body>
+</html>

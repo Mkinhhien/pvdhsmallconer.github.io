@@ -39,13 +39,13 @@ header
 {
   width: 400px;
   height: 300px;
-  align-items: flex-start;
+  order: 1;
   background: #ec2b24;
 }
 .section-2
 {
   width: 800px;
   height: 300px;
-  align-items: flex-end;
+  order: 2;
   background: #11659a;
 }

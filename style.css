@@ -30,10 +30,7 @@ header
   flex-direction: row;
   height: 300px;
   width:1200px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin: 40px auto;
 }
 .section-1
 {

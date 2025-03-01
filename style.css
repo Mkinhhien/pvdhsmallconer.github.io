@@ -46,3 +46,15 @@ header
   order: 2;
   background: #11659a;
 }
+.menu
+{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fffef8;
+}
+.menu li 
+{
+  padding: 15px 20px;
+}
